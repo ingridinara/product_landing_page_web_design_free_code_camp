@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Product Landing Page, Free  Camp Code Exercise"
+    />
+    <meta
+      name="description"
+      content="Free  Code Camp Exercise for responsive Web Design Certification"
+    />
+    <meta name="subject" content="Product Landing Page" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Ingrid Inara, @_IngridInara" />
+     <link rel="stylesheet" href="style.css">
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <div id="page-wrapper">
+    <header id="header">
+      <figure class="logo">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          alt="original trombone logo"
+          id="header-img"
+        />
+      </figure>
+      <nav id="nav-bar">
+        <ul>
+          <li ><a class="nav-link" href="#section1">Video</a></li>
+          <li><a class="nav-link" href="#section2">Email</a></li>
+          <li><a class="nav-link" href="#section3">Articles</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <section id="section1">
+      <div class="parent">
+        <h1>Emmebed Video Title</h1>
+      <div class="child size-16x9">
+        <iframe
+        id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section id="section2">
+      <div>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" autocomplete="off" method="post">
+        <div id="email-div">
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="name@mail.com"
+          autofocus
+          pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$"
+          aria-labelledby="email-label"
+          required
+          aria-required="true"
+          aria-describedby="user-email"
+        />
+        <span id="useremail_feedback" aria-live="polite" class="hidden"
+          >error message will appear in here</span
+        >
+      </div>
+    <div>
+    <input id="submit" type="submit" value="Submit" />
+  </div>
+      </form>
+    </section>
+    <section id="section3">
+      <article>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta eveniet hic accusantium, molestias repellendus illum nostrum quisquam? Natus nesciunt possimus veritatis consectetur ipsam, totam nemo ex maiores dolore laborum.</p></article>
+      <article>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem id ipsam molestiae itaque quod cumque recusandae possimus expedita unde quis corporis ex numquam, iste veritatis, facere culpa? Praesentium, natus amet.</p></article>
+      <article>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quo perferendis praesentium aspernatur adipisci nihil neque magni animi ut maiores, quae corporis vitae vero laborum debitis? Velit ipsam voluptatum similique.</p></article>
+    </section>
+  </main>
+</div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
